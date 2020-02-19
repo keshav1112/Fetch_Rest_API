@@ -15,7 +15,7 @@ fetch(API_URL)
             let bindData = '';
 
             data.forEach(element => {
-                console.log(element);
+                // console.log(element);
                 const {id, name, email, address:{street, zipcode}} = element;
                 bindData += `<tr><td>${id}</td> <td>${name}</td> <td>${email}</td> <td>${street}</td> <td>${zipcode}</td></tr>`; 
             })
